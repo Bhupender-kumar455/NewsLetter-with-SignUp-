@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "custom font";
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #36384d;
+  align-items: center;
+}
+@font-face {
+  font-family: "custom font";
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+.parent {
+  display: flex;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.list .points {
+  display: flex;
+  align-items: flex-start;
+}
+.first {
+  line-height: 35px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+h1 {
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 40px;
+}
+.first .description {
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.list .points img {
+  margin-right: 10px;
+}
+.list .points p {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.form p {
+  font-size: 13px;
+  font-weight: bold;
+}
+.form .alert {
+  margin-left: auto;
+  color: red;
+  display: none;
+}
+.form input {
+  width: 100%;
+  padding: 15px 0;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+.first button {
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  background-color: #36384d;
+  color: white;
+  border-radius: 10px;
+  transition: scale 0.25s ease;
+}
+.first button:active {
+  scale: 0.95;
+}
+@media (max-width: 786px) {
+  .parent {
+    flex-direction: column;
+    padding: 0;
+  }
+  .first {
+    order: 1;
+    padding: 20px;
+  }
+  .first h1 {
+    font-size: 50px;
+  }
+}
